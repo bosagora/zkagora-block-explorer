@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+# 구현
+React 프레임워크를 기반으로 하는 프론트앤드를 구현한다. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+L2 RPC 에서 제공하는 API를 사용하는 zkWeb3 JS SDK 를 사용하여 기본적인 데이터를 가져와 화면에 출력한다. 
+
+
+
+# Getting Started with Create App
+
+This project was bootstrapped with [react-graphql-redux-persist-eslint-prittier](https://github.com/she110ff/react-graphql-redux-persist-eslint-prittier).
 
 ## Available Scripts
 
@@ -38,23 +45,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-## Set remote for initial local changes
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/she110ff/react-myapp.git
-git push -u origin main
-
-
-## Set rebase merge 
-Uncheck 'Allow merge commits'
-
-## Ask the ChatGPT
-1. yarn을 사용해서 chakra ui, redux-tookit, redux-persist, graphql, prettier, eslint 을 포함하는 react typescritp 앱 생성
-2. react hook lint 추가
