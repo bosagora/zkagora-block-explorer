@@ -34,11 +34,18 @@ function NetworkStatus() {
   }, [l1BatchNumber]);
 
   return (
-    <Box>
-      <L1BatchSummary l1BatchDetail={l1BatchDetail} />
-      <div>Network Status : L1Batch #{l1BatchNumber}</div>
-      <JSONPretty id="json-pretty" data={l1BatchDetail}></JSONPretty>
-    </Box>
+    <>
+      {l1BatchNumber ? (
+        <Box>
+          {' '}
+          <L1BatchSummary l1BatchDetail={l1BatchDetail} />
+          <div>Network Status : L1Batch #{l1BatchNumber}</div>
+          <JSONPretty id="json-pretty" data={l1BatchDetail}></JSONPretty>
+        </Box>
+      ) : (
+        <div>Network is not available.</div>
+      )}
+    </>
   );
 }
 
