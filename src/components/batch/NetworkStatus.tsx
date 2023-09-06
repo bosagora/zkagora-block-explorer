@@ -3,6 +3,7 @@ import { Box } from '@chakra-ui/react';
 import { Wallet, Provider } from 'zksync-web3';
 import * as ethers from 'ethers';
 import JSONPretty from 'react-json-pretty';
+import L1BatchSummary from './L1BatchSummary';
 
 function NetworkStatus() {
   const provider = new Provider(
@@ -34,7 +35,8 @@ function NetworkStatus() {
 
   return (
     <Box>
-      Network Status : L1BatchNumber {l1BatchNumber}
+      <L1BatchSummary l1BatchDetail={l1BatchDetail} />
+      <div>Network Status : L1Batch #{l1BatchNumber}</div>
       <JSONPretty id="json-pretty" data={l1BatchDetail}></JSONPretty>
     </Box>
   );
